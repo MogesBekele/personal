@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>personal portfolio</title>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="css/index.css">
-
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/index.css" />
   </head>
   <body>
     <!--header-->
     <header>
       <a href="#" class="logo">moges.</a>
-      <i class='bx bx-menu' id="menu-icon"></i>
+      <i class="bx bx-menu" id="menu-icon"></i>
       <nav>
         <a href="#" class="active">Home</a>
         <a href="#">Services</a>
@@ -21,7 +23,6 @@
         <a href="#">Portfolio</a>
         <a href="#">Contact</a>
       </nav>
-
     </header>
 
     <!--home section -->
@@ -29,43 +30,288 @@
     <section class="home">
       <div class="home-detail">
         <h1>Moges Bekele</h1>
-        <h2>I'm a Fullstack developer</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis laudantium quisquam modi assumenda praesentium corrupti veritatis fugiat. Possimus optio veritatis, laudantium illo vel magnam repellendus iusto temporibus dolore nemo consequuntur?</p>
+        <h2>
+          I'm a
+          <span style="--i: 1" data-text="FullStack Developer"
+            >FullStack Developer</span
+          >
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis
+          laudantium quisquam modi assumenda praesentium corrupti veritatis
+          fugiat. Possimus optio veritatis, laudantium illo vel magnam
+          repellendus iusto temporibus dolore nemo consequuntur?
+        </p>
         <div class="btn-sci">
           <a href="#" class="btn">Download CV</a>
           <div class="sci">
-            <a href="#"><i class='bx bxl-github'></i></a>
-            <a href="#"><i class='bx bxl-linkedin'></i></a>
-            <a href="#"><i class='bx bxl-facebook'></i></a>
-            <a href="#"><i class='bx bxl-telegram'></i></a>
+            <a href="http://github.com/MogesBekele" target="_blank"
+              ><i class="bx bxl-github"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/moges-bekele-3b7794189"
+              target="_blank"
+              ><i class="bx bxl-linkedin"></i
+            ></a>
+            <a href="https://web.facebook.com/moges.bekele.984" target="_blank"
+              ><i class="bx bxl-facebook"></i
+            ></a>
+            <a href="https://t.me/moges868" target="_blank"
+              ><i class="bx bxl-telegram"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="home-img">
+        <div class="img-box">
+          <div class="img-item">
+            <img src="image/home.png" alt="" />
           </div>
         </div>
       </div>
     </section>
 
+    <!--service section-->
 
+    <section class="Services">
+      <h2 class="heading">My <span>Services</span></h2>
+      <div class="services-container">
+        <div class="services-box">
+          <div class="icon">
+            <i class="bx bx-code-alt"></i>
+            <a href="#"><i class="bx bx-arrow-back"></i></a>
+          </div>
+          <h3>Web Development</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+            repudiandae non explicabo temporibus fac
+          </p>
+        </div>
+        <div class="services-box">
+          <div class="icon">
+            <i class="bx bx-code"></i>
+            <a href="#"><i class="bx bx-arrow-back"></i></a>
+          </div>
+          <h3>Frontend Development</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+            repudiandae non explicabo temporibus facilis tenet
+          </p>
+        </div>
+        <div class="services-box">
+          <div class="icon">
+            <i class="bx bx-code-curly"></i>
+            <a href="#"><i class="bx bx-arrow-back"></i></a>
+          </div>
+          <h3>Backend Development</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+            repudiandae non explicabo temporibus facilis tene
+          </p>
+        </div>
+        <div class="services-box">
+          <div class="icon">
+            <i class="bx bx-code-block"></i>
+            <a href="#"><i class="bx bx-arrow-back"></i></a>
+          </div>
+          <h3>FullStack Development</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+            repudiandae non explicabo temporibus facilis tenetur
+          </p>
+        </div>
+        <div class="services-box">
+          <div class="icon">
+            <i class="bx bx-devices"></i>
+            <a href="#"><i class="bx bx-arrow-back"></i></a>
+          </div>
+          <h3>Responsive Design</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+            repudiandae non explicabo temporibus facilis tene
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="resume active">
+      <div class="resume-container">
+        <div class="resume-box">
+          <h2>Why Hire Me?</h2>
+          <p class="desc">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Dignissimos iusto doloremque explicabo fuga nobis? Ab blanditiis,
+            voluptates tempore praesentium exercitationem labore, delectus
+            recusandae
+          </p>
+          <button class="resume-btn active">Experience</button>
+          <button class="resume-btn">Education</button>
+          <button class="resume-btn">Skills</button>
+          <button class="resume-btn">About Me</button>
+        </div>
+        <div class="resume-box">
+          <div class="resume-detail experience active">
+            <h2 class="heading">My <span>Experience</span></h2>
+            <p class="desc">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Asperiores sunt ut numquam saepe quod quidem ipsam tempore
+              exercitationem a dolorum enim debitis assumen
+            </p>
+            <div class="resume-list">
+              <div class="resume-item">
+                <p class="year">2023-Present</p>
+                <h3>FullStack Developer</h3>
+                <p class="company">freelance</p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Eveniet, sed! Repudiandae, expedita tenetur ducimus distinctio
+                  repellat molestiae? Deserunt vero
+                </p>
+              </div>
+              <div class="resume-item">
+                <p class="year">2021 - 2023</p>
+                <h3>aurora</h3>
+                <p class="company">Aurora</p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Eveniet, sed! Repudiandae, expedita tenetur ducimus distinctio
+                  repellat molestiae? Deserunt vero
+                </p>
+              </div>
+              <div class="resume-item">
+                <p class="year">2023-Present</p>
+                <h3>FullStack Developer</h3>
+                <p class="company">Aurora</p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Eveniet, sed! Repudiandae, expedita tenetur ducimus distinctio
+                  repellat molestiae? Deserunt vero
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="resume-detail education">
+            <h2 class="heading">My <span>Education</span></h2>
+            <p class="desc">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Asperiores sunt ut numquam saepe quod quidem ipsam tempore
+              exercitationem a dolorum enim debitis assumen
+            </p>
+            <div class="resume-list">
+              <div class="resume-item">
+                <p class="year">2024</p>
+                <h3>Programming Course</h3>
+                <p class="company">Online Course</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic nisi eveniet beatae, quaerat vel commodi?</p>
+              </div>
+              <div class="resume-item">
+                <p class="year">2024</p>
+                <h3>Programming Course</h3>
+                <p class="company">Online Course</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic nisi eveniet beatae, quaerat vel commodi?</p>
+              </div>
+              <div class="resume-item">
+                <p class="year">2024</p>
+                <h3>Programming Course</h3>
+                <p class="company">Online Course</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic nisi eveniet beatae, quaerat vel commodi?</p>
+              </div>
+              <div class="resume-item">
+                <p class="year">2024</p>
+                <h3>Programming Course</h3>
+                <p class="company">Online Course</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic nisi eveniet beatae, quaerat vel commodi?</p>
+              </div>
+            </div>
+          </div>
+          <div class="resume-detail skills">
+            <h2 class="heading">My <span>Skills</span></h2>
+            <p class="desc">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Asperiores sunt ut numquam saepe quod quidem ipsam tempore
+              exercitationem a dolorum enim debitis assumen
+            </p>
+            <div class="resume-list">
+              <div class="resume-item">
+                <i class='bx bxl-html5'></i>
+                <span>HTML5</span>
+              </div>
+              <div class="resume-item">
+                <i class='bx bxl-css3'></i>
+                <span>CSS3</span>
+              </div>
+              <div class="resume-item">
+                <i class='bx bxl-javascript'></i>
+                <span>JavaScript</span>
+              </div>
+              <div class="resume-item">
+                <i class='bx bxl-react'></i>
+                <span>React.js</span>
+              </div>
+              <div class="resume-item">
+                <i class='bx bxl-nodejs'></i>
+                <span>Node.js</span>
+              </div>
+              <div class="resume-item">
+                <i class='bx bxl-tailwind-css'></i>
+                <span>Tailwind CSS</span>
+              </div>
+              <div class="resume-item">
+                <i class='bx bxl-typescript'></i>
+                <span>TypeScript</span>
+              </div>
+              
+              <div class="resume-item">
+                <i class='bx bxl-mongodb'></i>
+                <span>MongoDB</span>
+              </div>
+             
+            </div>
+          </div>
+          <div class="resume-detail about">
+            <h2 class="heading">About <span>Me</span></h2>
+            <p class="desc">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Asperiores sunt ut numquam saepe quod quidem ipsam tempore
+              exercitationem a dolorum enim debitis assumen
+            </p>
+            <div class="resume-list">
+              <div class="resume-item">
+                <p> Name<span>Moges Bekele</span></p>
+              </div>
+              <div class="resume-item">
+                <p>Gender<span>Male</span></p>
+              </div>
+              <div class="resume-item">
+                <p>Age<span>27 Years Old</span></p>
+              </div>
+              <div class="resume-item">
+                <p>City<span>Addis Ababa</span></p>
+              </div>
+              <div class="resume-item">
+                <p>Nationality<span>Ethiopian</span></p>
+              </div>
+              <div class="resume-item">
+                <p>Full Time<span>Available</span></p>
+              </div>
+              <div class="resume-item">
+                <p>Freelance<span>Available</span></p>
+              </div>
+              <div class="resume-item">
+                <p>Phone<span>+251 964671617</span></p>
+              </div>
+              <div class="resume-item">
+                <p>Email<span>mogesbekele32@gmail.com</span></p>
+              </div>
+              <div class="resume-item">
+                <p> Languages<span>English, Amharic</span></p>
+              </div>
 
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
+    <script src="js/index.js"></script>
   </body>
 </html>
