@@ -411,17 +411,20 @@
               </div>
             </div>
             <div class="contact-box">
-           <form action="">
-            <h2 class="heading">Contact <span>Me</span></h2>
-            <div class="field-box">
-              <input type="text" placeholder="Full Name" required>
-              <input type="email" placeholder="Email Address" required>
-              <input type="text" placeholder="Phone Number" required>
-              <input type="text" placeholder="Email Subject">
-              <textarea name="" id="" placeholder="Your Message" required></textarea>
-            </div>
-            <button type="submit" class="btn">Send Message</button>
-           </form>
+              <form action="https://api.web3forms.com/submit" method="POST"  id="web3Form">
+                <h2 class="heading">Contact <span>Me</span></h2>
+                <div class="field-box">
+                  <input type="hidden" name="access_key" value="161d4ae9-caa4-496c-bda2-e23aeee07b69">
+                  <input type="text" name="full_name" placeholder="Full Name" required>
+                  <input type="email" name="email" placeholder="Email Address" required>
+                  <input type="text" name="phone_number" placeholder="Phone Number" required>
+                  <input type="text" name="subject" placeholder="Subject">
+                  <textarea name="message" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+                <div id="result"></div>
+              </form>
+              
             </div>
           </div>
 

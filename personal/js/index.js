@@ -113,3 +113,13 @@ arrowLeft.addEventListener('click', () =>{
   }
   activePortfolio()
   })
+
+
+  
+  document.getElementById("web3Form").addEventListener("submit", function(event) {
+    // After submission, wait for the form to open in the new tab, then reset
+    setTimeout(() => {
+      event.target.reset(); // Reset form fields
+      document.getElementById("result").innerText = "Form submitted successfully!";
+    }, 500); // Adjust the delay if needed
+  });

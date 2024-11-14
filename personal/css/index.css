@@ -771,6 +771,11 @@ color: var(--white-color);
   margin-top: 2rem;
   cursor: pointer;
 }
+#result{
+  color: var(--main-color);
+  padding: 1rem;
+  font-size: 2rem;
+}
 
 
 @media screen and (max-width:1200px) {
