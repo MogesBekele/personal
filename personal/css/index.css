@@ -206,7 +206,7 @@ animation: fill-text 3s linear infinite;
 }
 .btn{
   display: inline-block;
-  padding: 1rem 3rem;
+  padding: 1rem 2rem;
   background: var(--main-color);
   border: .2rem solid var(--main-color);
   border-radius: 4rem;
