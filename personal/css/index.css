@@ -884,6 +884,9 @@ grid-template-columns: 1fr;
   .contact-box h2{
     font-size: 3.5rem;
   }
+  .btn{
+    padding-bottom: .4rem;
+  }
 }
 
 
