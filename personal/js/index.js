@@ -35,12 +35,13 @@ navbar.classList.remove('active')
 }
 navLinks.forEach((link, idx)=>{
   link.addEventListener('click', ()=>{
-    if(link.classList.contains('active'))
+    if(!link.classList.contains('active')) {
       activePage();
-    link.classList.add('active')
-    setTimeout(()=>{
-  sections[idx].classList.add('active')
-    },1100)
+      link.classList.add('active');
+      setTimeout(()=>{
+        sections[idx].classList.add('active')
+      },1100)
+    }
   })
 })
 
