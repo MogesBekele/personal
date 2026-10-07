@@ -106,10 +106,38 @@ arrowLeft.addEventListener('click', () =>{
 
 
   
-  document.getElementById("web3Form").addEventListener("submit", function(event) {
-    // After submission, wait for the form to open in the new tab, then reset
-    setTimeout(() => {
-      event.target.reset(); // Reset form fields
-      document.getElementById("result").innerText = "Form submitted successfully!";
-    }, 500); // Adjust the delay if needed
+  const form = document.getElementById("web3Form");
+  const result = document.getElementById("result");
+
+  form.addEventListener("submit", function(event) {
+    event.preventDefault();
+    result.style.color = "var(--main-color)";
+    result.innerText = "Sending message...";
+
+    const formData = new FormData(form);
+
+    fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData
+    })
+    .then(async (response) => {
+      const data = await response.json();
+      if (response.status === 200 && data.success) {
+        result.style.color = "var(--main-color)";
+        result.innerText = "Thank you! Your message has been sent to me successfully.";
+        form.reset();
+      } else {
+        result.style.color = "#ff5f56";
+        result.innerText = data.message || "Failed to send message. Please try again.";
+      }
+    })
+    .catch((error) => {
+      result.style.color = "#ff5f56";
+      result.innerText = "Something went wrong. Please try again later.";
+    })
+    .finally(() => {
+      setTimeout(() => {
+        result.innerText = "";
+      }, 6000);
+    });
   });
